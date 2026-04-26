@@ -30,8 +30,8 @@ public class ShoppingCart {
             return;
         }
 
-        for (Product p : cart) {
-            System.out.println(p);
+        for (Product product : cart) {
+            System.out.println(product);
         }
         System.out.println("Total: $" + getCartTotal());
     }
