@@ -32,8 +32,8 @@ public class Main {
     }
 
     public static void showAllProducts() {
-        for (Product p : products) {
-            System.out.println(p);
+        for (Product product : products) {
+            System.out.println(product);
         }
 
         System.out.println("\nEnter product NAME to add to cart or X to go back:");
@@ -72,9 +72,9 @@ public class Main {
             case 1 -> {
                 System.out.println("Enter product NAME to remove:");
                 String name = scanner.nextLine();
-                Product p = findProductByName(name);
-                if (p != null) {
-                    cart.removeFromCart(p);
+                Product product = findProductByName(name);
+                if (product != null) {
+                    cart.removeFromCart(product);
                 }
             }
             case 2 -> {
